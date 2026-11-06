@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" role="img" aria-label="OpenPockets">
+<rect width="128" height="128" fill="#0E2B28"/>
+<g transform="translate(24 24) scale(0.8333)">
+<path d="M74.31 38.42 A28 28 0 1 1 57.58 21.69" fill="none" stroke="#34D1BF" stroke-width="11" stroke-linecap="round"/>
+<circle cx="77" cy="19" r="9" fill="#FFC24D"/>
+<circle cx="48" cy="48" r="6" fill="#8FE3D6"/>
+</g>
+</svg>

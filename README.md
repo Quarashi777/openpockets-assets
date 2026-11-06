@@ -1,0 +1,1 @@
+OpenPocketsのロゴ素材
