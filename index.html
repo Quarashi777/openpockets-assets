@@ -11,19 +11,27 @@
 <meta name="theme-color" content="#0E2B28">
 <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon-180.png">
 <link rel="icon" type="image/png" href="apple-touch-icon-180.png">
-<noscript><meta http-equiv="refresh" content="0;url=https://script.google.com/macros/s/AKfycbxzxw9MTY9hY_9XUfAUwxyVhoOkMvJL3B-2VVvyy9Lq-oh9pOBvJg3ZiUjJjqn6gJe6Dw/exec"></noscript>
+<script>
+// Launched from the home screen: go straight to the app without showing the guide.
+if (navigator.standalone === true) {
+  document.documentElement.className = 'launching';
+  location.replace('https://script.google.com/macros/s/AKfycbxzxw9MTY9hY_9XUfAUwxyVhoOkMvJL3B-2VVvyy9Lq-oh9pOBvJg3ZiUjJjqn6gJe6Dw/exec');
+}
+</script>
 <style>
-html,body{margin:0;height:100%;background:#0E2B28}
-body{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;font-family:system-ui,-apple-system,sans-serif}
+html,body{margin:0;min-height:100%;background:#0E2B28}
+html.launching body{visibility:hidden}
+body{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;min-height:100vh;padding:24px;box-sizing:border-box;font-family:system-ui,-apple-system,sans-serif;color:#F2F7F5;text-align:center}
 img{width:96px;height:96px;border-radius:22px}
-p{margin:0;color:#F2F7F5;font-size:1.5rem;font-weight:800;letter-spacing:-.025em}
-a{color:#F2F7F5}
+h1{margin:0;font-size:1.5rem;font-weight:800;letter-spacing:-.025em}
+p{margin:0;max-width:320px;line-height:1.6;opacity:.9}
+a{display:inline-block;margin-top:8px;padding:12px 20px;border-radius:999px;background:#34D1BF;color:#0E2B28;font-weight:700;text-decoration:none}
 </style>
 </head>
 <body>
 <img src="apple-touch-icon-180.png" alt="" aria-hidden="true">
-<p>OpenPockets</p>
-<noscript><a href="https://script.google.com/macros/s/AKfycbxzxw9MTY9hY_9XUfAUwxyVhoOkMvJL3B-2VVvyy9Lq-oh9pOBvJg3ZiUjJjqn6gJe6Dw/exec">https://script.google.com/macros/s/AKfycbxzxw9MTY9hY_9XUfAUwxyVhoOkMvJL3B-2VVvyy9Lq-oh9pOBvJg3ZiUjJjqn6gJe6Dw/exec</a></noscript>
-<script>location.replace('https://script.google.com/macros/s/AKfycbxzxw9MTY9hY_9XUfAUwxyVhoOkMvJL3B-2VVvyy9Lq-oh9pOBvJg3ZiUjJjqn6gJe6Dw/exec');</script>
+<h1>OpenPockets</h1>
+<p>แตะปุ่มแชร์ แล้วเลือก “เพิ่มไปยังหน้าจอโฮม” เพื่อเพิ่มแอปไว้ที่หน้าจอโฮม</p>
+<a href="https://script.google.com/macros/s/AKfycbxzxw9MTY9hY_9XUfAUwxyVhoOkMvJL3B-2VVvyy9Lq-oh9pOBvJg3ZiUjJjqn6gJe6Dw/exec">เปิดแอปโดยตรง</a>
 </body>
 </html>
